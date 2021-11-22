@@ -1,6 +1,5 @@
-server: 
-  port: 8080
 
 logging:
-  level: 
-    root: debug
+  config: classpath:log4j2.xml
+
+
