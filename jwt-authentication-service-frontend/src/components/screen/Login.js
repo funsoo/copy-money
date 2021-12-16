@@ -87,6 +87,19 @@ function Login(props) {
                         {"로그인"}
                     </Button>
                 </form>
+
+                <Button
+                        id="login"
+                        disabled={false}
+                        data-testid="login"
+                        type="submit"
+                        variant="contained"
+                        color="primary"
+                        size="large"
+                        onClick={onTestSubmit}
+                    >
+                        {"회원가입"}
+                    </Button>
             </div>
         }
     </>

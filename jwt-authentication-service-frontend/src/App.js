@@ -1,10 +1,15 @@
-import "./App.css";
-import Login from "./components/Login";
+import { BrowserRouter } from "react-router-dom";
+import MainApp from "./components/apps/MainApp";
+import { RecoilRoot } from "recoil";
 
 function App() {
 
   return (
-    <Login/>
+    <BrowserRouter>
+      <RecoilRoot>
+          <MainApp/>
+      </RecoilRoot>
+    </BrowserRouter>
   );
 }
 

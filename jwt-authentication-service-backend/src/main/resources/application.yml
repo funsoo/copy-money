@@ -14,12 +14,10 @@ spring:
     username: hus0316
     password: gusdnr12
 
-  thymeleaf:
-    cache : false
-    check-template-location : true
-    prefix : classpath:/templates/
-    suffix : .html
-
+  security :
+    user :
+      name : hus0316
+      password : gusdnr12
     
   jpa:
     hibernate:

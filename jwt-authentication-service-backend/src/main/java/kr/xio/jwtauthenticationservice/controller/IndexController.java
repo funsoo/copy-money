@@ -1,10 +1,8 @@
 package kr.xio.jwtauthenticationservice.controller;
 
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@Controller
 @RestController
 public class IndexController {
 
@@ -31,12 +29,12 @@ public class IndexController {
     @GetMapping("/login")
     public String login(){
 
-        return "login";
+        return "loginForm";
     }
     @GetMapping("/join")
     public String join(){
 
-        return "join";
+        return "joinForm";
     }
 
     @GetMapping("/joinProc")
