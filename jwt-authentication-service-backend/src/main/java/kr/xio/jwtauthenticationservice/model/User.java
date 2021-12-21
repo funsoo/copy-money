@@ -1,18 +1,16 @@
 package kr.xio.jwtauthenticationservice.model;
 
 import java.sql.Timestamp;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-
 import org.hibernate.annotations.CreationTimestamp;
 
 import lombok.Data;
-
-@Entity
+    
 @Data
+@Entity
 public class User {
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
@@ -24,6 +22,6 @@ public class User {
     private String role;
     
     @CreationTimestamp
-    private Timestamp createDate;
+	private Timestamp createDate;
     
 }

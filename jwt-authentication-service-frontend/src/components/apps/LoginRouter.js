@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Login from "../screen/Login";
 import SignUp from "../screen/SignUp";

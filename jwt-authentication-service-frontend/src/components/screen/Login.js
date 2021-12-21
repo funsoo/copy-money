@@ -1,5 +1,7 @@
 import { Button, TextField } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
+import { Link } from "react-router-dom";
+
 import { useState } from "react";
 
 import axios from "axios";
@@ -88,18 +90,7 @@ function Login(props) {
                     </Button>
                 </form>
 
-                <Button
-                        id="login"
-                        disabled={false}
-                        data-testid="login"
-                        type="submit"
-                        variant="contained"
-                        color="primary"
-                        size="large"
-                        onClick={onTestSubmit}
-                    >
-                        {"회원가입"}
-                    </Button>
+              <Link to= "/signUp" style = {{}}>회원가입</Link>
             </div>
         }
     </>
